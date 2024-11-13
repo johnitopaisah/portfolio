@@ -7,10 +7,10 @@ import './About.scss';
 // import { urlFor, client } from '../../client';
 
 const abouts = [
-  {title: 'Web Design', description: 'I am good at design', imgUrl: 'images.about01'},
-  {title: 'Web Design', description: 'I am good at design', imgUrl: 'images.about02'},
-  {title: 'Web Design', description: 'I am good at design', imgUrl: 'images.about03'},
-  {title: 'Web Design', description: 'I am good at design', imgUrl: 'images.about04'}
+  {title: 'Web Design', description: 'I am good at design', imgUrl: images.about01},
+  {title: 'Web Design', description: 'I am good at design', imgUrl: images.about02},
+  {title: 'Web Design', description: 'I am good at design', imgUrl: images.about03},
+  {title: 'Web Design', description: 'I am good at design', imgUrl: images.about04}
 ]
 
 const About = () => {
@@ -26,7 +26,7 @@ const About = () => {
 
   return (
     <>
-      <h2 className="head-text">Effective design is more than aesthetics; <span>it’s a fusion of functionality, scalability,</span> <br />and user-centric experience that  <span>and user-centric experience that</span></h2>
+      <h2 className="head-text">Effective design is more than aesthetics; <span>it’s a fusion of functionality, scalability,</span> <br />and user-centric experience that  <span>drives sustainable business value.</span></h2>
 
       <div className="app__profiles">
         {abouts.map((about, index) => (
@@ -37,7 +37,7 @@ const About = () => {
             className="app__profile-item"
             key={about.title + index}
           >
-            <img src={about.imgUrl.title}/>
+            <img src={about.imgUrl} alt={about.title}/>
             {/* <img src={urlFor(about.imgUrl)} alt={about.title} /> */}
             <h2 className="bold-text" style={{ marginTop: 20 }}>{about.title}</h2>
             <p className="p-text" style={{ marginTop: 10 }}>{about.description}</p>

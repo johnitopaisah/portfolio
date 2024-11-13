@@ -8,9 +8,9 @@ import c_prog from '../assets/c_prog.png';
 import spring from '../assets/spring.png';
 import bgIMG from '../assets/bgIMG.png';
 import about01 from '../assets/about01.png';
-import about02 from '../assets/about01.png';
-import about03 from '../assets/about01.png';
-import about04 from '../assets/about01.png';
+import about02 from '../assets/about02.png';
+import about03 from '../assets/about03.png';
+import about04 from '../assets/about04.png';
 
 
 export default {
@@ -26,5 +26,5 @@ export default {
   about01,
   about02,
   about03,
-  about04
+  about04,
 }
